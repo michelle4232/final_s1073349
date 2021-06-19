@@ -96,6 +96,7 @@ def spot(place):
 '''
 
 # 監聽所有來自 /callback 的 Post Request
+# 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
@@ -117,17 +118,21 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    mtext= text = event.message.text
-    print(mtext)
-    if re.match('告訴我秘密',mtext):
+    message = text=event.message.text
+    if re.match('告訴我秘密',message):
         # 貼圖查詢：https://developers.line.biz/en/docs/messaging-api/sticker-list/#specify-sticker-in-message-object
         sticker_message = StickerSendMessage(
             package_id='1',
             sticker_id='1'
         )
         line_bot_api.reply_message(event.reply_token, sticker_message)
-    elif mtext == 'test':
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
+    else:
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(message))
+#主程式
+import os
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
 
     '''
    elif mtext[-2:] == '天氣':
@@ -149,11 +154,3 @@ def handle_message(event):
         except:
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text='中間訊息輸入有誤!!'))
         '''
-
-
-
-#主程式
-import os
-if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
