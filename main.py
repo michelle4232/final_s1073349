@@ -110,6 +110,7 @@ def handle_message(event):
         txt = cmd[1]
         print(txt)
         result = text_to_translate(text=txt)
+        TextSendMessage(text=result)
     else:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 
