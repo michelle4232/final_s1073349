@@ -16,7 +16,7 @@ line_bot_api = LineBotApi('ra82QMewyxn2gn9uZkwidIc1QNxhKiRQvSFeDxath6YR1OzzyWANu
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('a0b4d2d97a0b66c6e6e0b90c3394c906')
 
-line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
+#line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -40,8 +40,8 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = text=event.message.text
-    if re.match('告訴我秘密',message):
+    mtext=event.message.text
+    if re.match('告訴我秘密',mtext):
         # 貼圖查詢：https://developers.line.biz/en/docs/messaging-api/sticker-list/#specify-sticker-in-message-object
         sticker_message = StickerSendMessage(
             package_id='1',
@@ -49,7 +49,7 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, sticker_message)
     else:
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(message))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 #主程式
 import os
 if __name__ == "__main__":
