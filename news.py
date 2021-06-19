@@ -17,15 +17,13 @@ def getAllComments(pageurl):
         title = p.get('title')
         time = p.select_one('.time').text
 
-        print(time, title, url)
+        #print(time, title, url)
         news_all.append(time)
-        news_all.append(' ')
+        #news_all.append(' ')
         news_all.append(title)
-        news_all.append(' ')
+        #news_all.append(' ')
         news_all.append(url)
     return news_all
 
 
-#a = []
-#a = getAllComments('https://news.ltn.com.tw/list/breakingnews')
-#print(a)
+

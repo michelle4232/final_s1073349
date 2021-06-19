@@ -132,10 +132,18 @@ def handle_message(event):
         result = []
         r =''
         result = getAllComments('https://news.ltn.com.tw/list/breakingnews')
-        for i in len(result):
-            if i >= 5:
+        r = ''
+        i = 0
+        for txt in result:
+            # print(txt)
+            i = i + 1
+            if i >= 18:
                 break
-            r += result[i] + '\n'
+            if i % 3 == 0:
+                r += txt + '\n'
+            else:
+                r += txt
+            # print(txt)
         print(r)
         line_bot_api.reply_message(
             event.reply_token,
