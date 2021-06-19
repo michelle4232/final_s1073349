@@ -11,3 +11,4 @@ pyshorteners
 gunicorn
 django-heroku
 requests
+googletest

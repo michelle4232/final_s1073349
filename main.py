@@ -14,6 +14,7 @@ import os
 from flask import Flask, request, abort
 import requests
 import json
+from googleTrans import text_to_translate
 
 app = Flask(__name__)
 
@@ -27,6 +28,7 @@ handler = WebhookHandler('1e9a05fa42febda9fc4f8e629dfe2e75')
 print('aaa')
 
 
+#氣象預報
 def GetWeather(station):
     end_point = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-6B01579C-E0F7-4DE2-A51A-AD5FDFFF709F"
 
@@ -93,8 +95,9 @@ def handle_message(event):
 
     if mtext == '你好':
         line_bot_api.reply_message(event.reply_token, '嗨嗨')
-    elif cmd[0] == "天氣":
+    elif cmd[0] == "@天氣":#e.g. 天氣 新竹市
         station = cmd[1]
+        print(station)
         WeatherMsg = MakeWeather(station)
 
         if not WeatherMsg:
@@ -103,6 +106,9 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=WeatherMsg))
+    elif cmd[0] == '@翻譯':
+        txt = cmd[1]
+        result = text_to_translate(text=txt, dest='zh-tw')
     else:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 
