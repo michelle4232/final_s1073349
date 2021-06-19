@@ -28,19 +28,19 @@
 ---------------------------------------
   > input: `` @翻譯 I am happy ``
   > > output: 我很高興
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/trans.jpg)
 ---------------------------------------
   > input:`` @電影 ``
   > > output: 最近即將上映之電影
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/movie.jpg){:height="50%" width="50%"}
 ---------------------------------------
   > input: `` @即時新聞 ``
   > > output: 最近六則新聞
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/news.jpg)
 ---------------------------------------
   > input: `` #2330 `` 
   > > output: 此股最新價格及近五日波動
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/stock.jpg)
 ---------------------------------------
 ## References
 + https://marketingliveincode.com/?page_id=2532
