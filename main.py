@@ -16,6 +16,8 @@ import requests
 import json
 from googleTrans import text_to_translate
 from newMovie import check_req_url, get_week_new_movies
+from news import getAllComments
+
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
@@ -123,6 +125,11 @@ def handle_message(event):
             line_bot_api.reply_message(
                 event.reply_token,
                 TextSendMessage(text=result))
+    elif cmd[0] == '@即時新聞':
+        result = getAllComments('https://news.ltn.com.tw/list/breakingnews')
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=result))
     else:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 

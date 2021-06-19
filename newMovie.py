@@ -36,7 +36,7 @@ def get_week_new_movies(webpage):  # 抓取電影資訊
         name = str(movie['ch_name'])
         en_name = str(movie['english_name'])
         #print(movie['ch_name'])
-        text += (name + '(' + en_name+ ')' + '\n')
+        text += (name + '(' + en_name + ')' + '\n')
     #print(text)
 
     return text
