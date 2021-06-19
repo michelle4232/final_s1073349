@@ -119,7 +119,8 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    mtext=event.message.text
+    mtext= text = event.message.text
+    print(mtext)
     if re.match('告訴我秘密',mtext):
         # 貼圖查詢：https://developers.line.biz/en/docs/messaging-api/sticker-list/#specify-sticker-in-message-object
         sticker_message = StickerSendMessage(
@@ -127,26 +128,10 @@ def handle_message(event):
             sticker_id='1'
         )
         line_bot_api.reply_message(event.reply_token, sticker_message)
-    elif mtext[-2:] == '天氣':
-        place = mtext.split(' ')[0]  # 取得現在位置
-        print(place)
-        city = []
-        for i in range(len(spot(place)['address_components'])):
-            city.append(spot(place)['address_components'][i]['long_name'])  # 取得現在位置的所處縣市
-        city = convert(city)  # 換成中文
-        WeatherMsg = MakeWeather(city)
-
-        if not WeatherMsg:
-            WeatherMsg = "沒這個氣象站!"
-        try:
-            message = TextSendMessage(
-                text=WeatherMsg
-            )
-            line_bot_api.reply_message(event.reply_token, message)
-        except:
-            line_bot_api.reply_message(event.reply_token, TextSendMessage(text='中間訊息輸入有誤!!'))
     elif mtext == 'test':
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
+
+
 
 
 #主程式
