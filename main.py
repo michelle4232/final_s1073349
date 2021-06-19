@@ -23,6 +23,7 @@ handler = WebhookHandler('a0b4d2d97a0b66c6e6e0b90c3394c906')
 
 #line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
 
+'''
 # 獲取Googlemap API
 gmaps = googlemaps.Client(key='AIzaSyAhk8_pbKnD6Yx8Ii-8sc3U3ddymGmXHjg')
 
@@ -73,10 +74,6 @@ def MakeWeather(station):
     print(msg)
     return msg
 
-
-
-
-
 def convert(city):
     tw = [
         "臺北市", "新北市", "桃園市", "臺中市", "臺南市", "高雄市", "基隆市", "新竹市", "嘉義市", "新竹縣",
@@ -96,6 +93,7 @@ def spot(place):
     # 取得地點資料(list第0項=資料的dictionary型態)
     geocode_result = geocode_result[0]
     return geocode_result
+'''
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -131,6 +129,26 @@ def handle_message(event):
     elif mtext == 'test':
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 
+    '''
+   elif mtext[-2:] == '天氣':
+        place = mtext.split(' ')[0]  # 取得現在位置
+        print(place)
+        city = []
+        for i in range(len(spot(place)['address_components'])):
+            city.append(spot(place)['address_components'][i]['long_name'])  # 取得現在位置的所處縣市
+        city = convert(city)  # 換成中文
+        WeatherMsg = MakeWeather(city)
+
+        if not WeatherMsg:
+            WeatherMsg = "沒這個氣象站!"
+        try:
+            message = TextSendMessage(
+                text=WeatherMsg
+            )
+            line_bot_api.reply_message(event.reply_token, message)
+        except:
+            line_bot_api.reply_message(event.reply_token, TextSendMessage(text='中間訊息輸入有誤!!'))
+        '''
 
 
 
