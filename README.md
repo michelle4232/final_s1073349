@@ -24,15 +24,15 @@
 + 結果 Example
   > input: `` @天氣 新竹市 ``
   > > output: 天氣, 溫度, 降雨, 溫溼度
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg){:height="700px" width="400px"}
 ---------------------------------------
   > input: `` @翻譯 I am happy ``
   > > output: 我很高興
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/trans.jpg)
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/trans.jpg){:height="700px" width="400px"}
 ---------------------------------------
   > input:`` @電影 ``
   > > output: 最近即將上映之電影
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/movie.jpg){:height="50%" width="50%"}
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/movie.jpg){:height="700px" width="400px"}
 ---------------------------------------
   > input: `` @即時新聞 ``
   > > output: 最近六則新聞
