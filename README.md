@@ -24,7 +24,7 @@
 + 結果 Example
   > input: `` @天氣 新竹市 ``
   > > output: 天氣, 溫度, 降雨, 溫溼度
-  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg){:height="700px" width="400px"}
+  > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg" width="100" height="100">
 ---------------------------------------
   > input: `` @翻譯 I am happy ``
   > > output: 我很高興
