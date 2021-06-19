@@ -8,11 +8,6 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-import re
-import requests
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-import googlemaps
 
 app = Flask(__name__)
 
@@ -21,18 +16,19 @@ line_bot_api = LineBotApi('Zf8dczdo9U7hVl5kRxb+mTHD/xpxRuBTVGPxzT4WTFQy0yCyMYahI
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('1e9a05fa42febda9fc4f8e629dfe2e75')
 
-line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
+#line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
 
+print('aaa')
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
-
+    print('bbb')
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
-
+    print('ccc')
     # handle webhook body
     try:
         handler.handle(body, signature)

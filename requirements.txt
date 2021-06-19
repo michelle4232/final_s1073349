@@ -8,3 +8,5 @@ SnowNLP
 emoji
 scipy
 pyshorteners
+gunicorn
+django-heroku
