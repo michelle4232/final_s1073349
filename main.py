@@ -110,7 +110,7 @@ def handle_message(event):
             TextSendMessage(text=WeatherMsg))
 
     elif cmd[0] == '@翻譯':
-        txt = cmd[1]
+        txt = cmd
         result = text_to_translate(text=txt)
         print(result)
         line_bot_api.reply_message(
