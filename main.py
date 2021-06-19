@@ -14,7 +14,7 @@ import os
 from flask import Flask, request, abort
 import requests
 import json
-from googletrans import Translator
+from googleTrans import text_to_translate
 
 app = Flask(__name__)
 
@@ -27,12 +27,6 @@ handler = WebhookHandler('1e9a05fa42febda9fc4f8e629dfe2e75')
 
 print('aaa')
 
-
-
-def text_to_translate(text,dest='en'):
-    translator = Translator()
-    result = translator.translate(text, dest).text
-    return result
 
 #氣象預報
 def GetWeather(station):
@@ -115,7 +109,7 @@ def handle_message(event):
     elif cmd[0] == '@翻譯':
         txt = cmd[1]
         print(txt)
-        result = text_to_translate(text=txt, dest='zh-tw')
+        result = text_to_translate(text=txt)
     else:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 
