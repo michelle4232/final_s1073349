@@ -16,6 +16,21 @@
 ## Details of the approach
 
 ## Results
++ 執行程式方法
+  > 加入line好友
+  > 點選'run main'
+  > 依照功能需求在自己的line中輸入文字
++ 結果 Example
+  > input: @天氣 新竹市
+  > > 輸出: 天氣, 溫度, 降雨, 溫溼度
+  > input: @翻譯 I am happy
+  > > 輸出: 我很高興
+  > input: @電影
+  > > 輸出: 最近即將上映之電影
+  > input: @即時新聞
+  > > 輸出: 最近六則新聞
+  > input: #2330
+  > > 輸出: 此股最新價格及近五日波動
 
 ## References
 + https://marketingliveincode.com/?page_id=2532
