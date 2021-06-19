@@ -129,6 +129,7 @@ def handle_message(event):
                 TextSendMessage(text=result))
 
     elif cmd[0] == '@即時新聞':
+        result = []
         result = getAllComments('https://news.ltn.com.tw/list/breakingnews')
         line_bot_api.reply_message(
             event.reply_token,
