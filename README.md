@@ -23,19 +23,24 @@
   
 + 結果 Example
   > input: `` @天氣 新竹市 ``
-  > > 輸出: 天氣, 溫度, 降雨, 溫溼度
+  > > output: 天氣, 溫度, 降雨, 溫溼度
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
 ---------------------------------------
   > input: `` @翻譯 I am happy ``
-  > > 輸出: 我很高興
+  > > output: 我很高興
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
 ---------------------------------------
   > input:`` @電影 ``
-  > > 輸出: 最近即將上映之電影
+  > > output: 最近即將上映之電影
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
 ---------------------------------------
   > input: `` @即時新聞 ``
-  > > 輸出: 最近六則新聞
+  > > output: 最近六則新聞
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
 ---------------------------------------
   > input: `` #2330 `` 
-  > > 輸出: 此股最新價格及近五日波動
+  > > output: 此股最新價格及近五日波動
+  > > ![image](https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg)
 ---------------------------------------
 ## References
 + https://marketingliveincode.com/?page_id=2532
