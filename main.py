@@ -15,7 +15,7 @@ from flask import Flask, request, abort
 import requests
 import json
 from googleTrans import text_to_translate
-
+from newMovie import check_req_url, get_week_new_movies
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
@@ -113,7 +113,16 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=result))
-
+    elif cmd[0] == '@電影':
+        # Yahoo電影
+        yahoo_movie_url = 'https://movies.yahoo.com.tw/movie_comingsoon.html'  # 目標位置
+        # print(webpage)
+        webpage = check_req_url(yahoo_movie_url)
+        if webpage:
+            result = get_week_new_movies(webpage)
+            line_bot_api.reply_message(
+                event.reply_token,
+                TextSendMessage(text=result))
     else:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(mtext))
 
