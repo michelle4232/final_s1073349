@@ -1,16 +1,23 @@
 # final_s1073349
+  This is a lineBot helper for myself.
+## Build process
 
-# Build process
 
 
+## Introduction
+  由於現在大部分人皆是使用Line作為傳輸訊息之工具, 且以我來說. 比較不愛開電腦或網頁, 因此我使用Line作為一個小幫手，幫助我達到一些目的。
+  它包含了以下功能:
+  1. 查詢天氣
+  2. 翻譯
+  3. 即將上映之電影
+  4. 即時新聞
+  5. 及時股價
 
-# Introduction
+## Details of the approach
 
-# Details of the approach
+## Results
 
-# Results
-
-# References
+## References
 + https://marketingliveincode.com/?page_id=2532
 + https://www.youtube.com/channel/UCguZS-y7codLSt6vpkVdnKg
 + https://github.com/emn178/markdown
