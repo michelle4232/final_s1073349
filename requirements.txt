@@ -6,5 +6,4 @@ datetime
 pandas
 SnowNLP
 emoji
-pyshorteners
 scipy
