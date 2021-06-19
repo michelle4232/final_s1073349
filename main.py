@@ -17,9 +17,9 @@ import googlemaps
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
-line_bot_api = LineBotApi('ra82QMewyxn2gn9uZkwidIc1QNxhKiRQvSFeDxath6YR1OzzyWANu7M2KdnRpMcaXsPhjJJ5Zkz2/yULW+5PSh5ET2CG+MvKAZvOa6VY2cCjz/W3EHfCzicTEMcO3NvtndYZcSdsXX/jYssor8lG7QdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('Zf8dczdo9U7hVl5kRxb+mTHD/xpxRuBTVGPxzT4WTFQy0yCyMYahIUXdsL8hPtNV1Bja/WY4PwgJPbaFtdmf/vNnkjoGoDprnrpdqksGLXCijTkJfVVkQ8zz3ALCNb7m6pnuiEfWkfhlUi4S1thB5wdB04t89/1O/w1cDnyilFU=')
 # 必須放上自己的Channel Secret
-handler = WebhookHandler('a0b4d2d97a0b66c6e6e0b90c3394c906')
+handler = WebhookHandler('1e9a05fa42febda9fc4f8e629dfe2e75')
 
 #line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
 
