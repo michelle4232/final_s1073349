@@ -13,3 +13,5 @@ django-heroku
 requests
 google_trans_new
 bs4
+matplotlib
+twstock
