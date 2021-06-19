@@ -130,10 +130,16 @@ def handle_message(event):
 
     elif cmd[0] == '@即時新聞':
         result = []
+        r = []
         result = getAllComments('https://news.ltn.com.tw/list/breakingnews')
+        for i in len(result):
+            if i >= 5:
+                break
+            r.append(result[i])
+        print(r)
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text=result))
+            TextSendMessage(text=r))
 
     elif (text.startswith('#')):
         text = text[1:]
