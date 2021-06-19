@@ -137,6 +137,7 @@ def handle_message(event):
     elif (text.startswith('#')):
         text = text[1:]
         result = stocksFind(text)
+        print(result)
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=result))

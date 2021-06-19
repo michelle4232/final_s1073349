@@ -13,6 +13,7 @@ django-heroku
 requests
 google_trans_new
 bs4
+numpy
 matplotlib
 twstock
-lxml
+pandas
