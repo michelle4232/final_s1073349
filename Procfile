@@ -1,1 +1,1 @@
-web gunicorn open-source-project:app
+web: python main.py
