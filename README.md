@@ -1,11 +1,11 @@
-# final_s1073349
+# lineBot helper
   This is a lineBot helper for myself.
 ## Build process
 
 
 
 ## Introduction
-  由於現在大部分人皆是使用Line作為傳輸訊息之工具, 且以我來說. 比較不愛開電腦或網頁, 因此我使用Line作為一個小幫手，幫助我達到一些目的。
+  由於現在大部分人皆是使用Line作為傳輸訊息之工具, 且以我來說. 我並不是一個勤勞的人, 較不愛開電腦或網頁, 因此我使用Line作為一個小幫手，幫助我達到一些我平常會想要查詢的資料。
   它包含了以下功能:
   1. 查詢天氣
   2. 翻譯
