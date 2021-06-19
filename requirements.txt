@@ -10,3 +10,4 @@ scipy
 pyshorteners
 gunicorn
 django-heroku
+requests
