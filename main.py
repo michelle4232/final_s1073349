@@ -21,7 +21,7 @@ line_bot_api = LineBotApi('ra82QMewyxn2gn9uZkwidIc1QNxhKiRQvSFeDxath6YR1OzzyWANu
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('a0b4d2d97a0b66c6e6e0b90c3394c906')
 
-line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
+#line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
 
 # 監聽所有來自 /callback 的 Post Request
 # 監聽所有來自 /callback 的 Post Request
@@ -39,7 +39,7 @@ def callback():
         handler.handle(body, signature)
     except InvalidSignatureError:
         abort(400)
-
+    line_bot_api.push_message('Ue0e081b868223a8e25b8b3cd7898611d', TextSendMessage(text='你可以開始了'))
     return 'OK'
 
 #訊息傳遞區塊
