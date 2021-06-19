@@ -20,6 +20,7 @@
   > 加入line好友
   > 點選'run main'
   > 依照功能需求在自己的line中輸入文字
+  
 + 結果 Example
   > input: @天氣 新竹市
   > > 輸出: 天氣, 溫度, 降雨, 溫溼度
@@ -35,7 +36,7 @@
   ---------------------------------------
   > input: #2330
   > > 輸出: 此股最新價格及近五日波動
-
+  ---------------------------------------
 ## References
 + https://marketingliveincode.com/?page_id=2532
 + https://www.youtube.com/channel/UCguZS-y7codLSt6vpkVdnKg
