@@ -40,7 +40,7 @@
 
 ## Details of the approach
 
-  + psudoCode
+  + pseudoCode
       
         app_run()
         
