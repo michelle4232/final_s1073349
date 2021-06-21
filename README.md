@@ -12,11 +12,15 @@
     * 依照功能需求在自己的line中輸入文字(輸入之訊息有固定格式)
  
  + 若要執行程式
+    * 更改main.py的secret 及 token
     * 儲存檔案(直接執行main.py 即可) 
-    * 需先綁定Heroku(我是用github直接連結Heroku) 
-      * 將檔案拉到github中 
-      * 在Heroku開啟一個專案連結github 
-      * 將Heroku的url貼至使用帳號之channel的 ``Webhook URL`` 
+    * 需使用Heroku(我是用github直接連結Heroku) 
+      * 將檔案拉到github中上傳
+      * 在Heroku開啟一個專案 `` 點選Deploy `` 
+      * 連結github 
+      * 拉至Heroku此頁面最下方並點選 ``Deploy Branch``
+      * 將Heroku產生的網頁的url貼至使用帳號之channel的 ``Webhook URL`` 
+    * 若過程無出錯應可順利收發訊息
 
  + 可能會出現的小問題  
     * 可能因所採用的氣象局api, 缺少某些縣市的天氣資訊 
