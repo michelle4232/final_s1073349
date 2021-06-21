@@ -43,29 +43,28 @@
         listen from callback's post request
 
         get data from external input
-        if( input == weather){
-          connect to "opendata.cwb.gov.tw"api and get data to return
-        }
-        else if( input == translate){
-          split input
-          connect to google_trans_new
-          translate data and return 
-        }
-        else if( input == movie){
-          check_request is success or not
-          get the movie information which are going to come out and return information
-        }
-         else if( input == news){
-          parsing lxml and get information what we want
-          return it
-        }
-        else if( input == stock){
-          connect to twstock 
-          parsing the page and save stock information to return 
-        }
-        other{
-          return message what you send
-        }
+        if input == weather
+          then  connect to "opendata.cwb.gov.tw"api and get data to return
+        else if  input == translate
+          then split input
+               connect to google_trans_new
+               translate data and return 
+        
+        else if input == movie
+           then check_request is success or not
+                get the movie information which are going to come out and return information
+       
+         else if input == news
+           then parsing lxml and get information what we want
+                return it
+        
+        else if input == stock
+           then connect to twstock 
+                parsing the page and save stock information to return 
+        
+        otherwhise
+            then return message what you send
+
       
 
 ## Results
