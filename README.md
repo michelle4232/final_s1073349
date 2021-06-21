@@ -35,7 +35,38 @@
   5. 及時股價
 
 ## Details of the approach
-    main()
+    
+    app_run()
+    connect to http
+    main(){
+      listen from callback's post request
+      
+      get data from external input
+      if( input == weather){
+        connect to "opendata.cwb.gov.tw"api and get data
+        return and send to the user
+      }
+      else if( input == translate){
+        split input
+        connect to google_trans_new
+        translate data and return 
+      }
+      else if( input == movie){
+        check_request is success or not
+        get the movie information which are going to come out and return information
+      }
+       else if( input == news){
+        parsing lxml and get information what we want
+        return it
+      }
+      else if( input == stock){
+        connect to twstock 
+        parsing the page and save stock information to return 
+      }
+      other{
+        return message what you send
+      }
+    }
 
 ## Results
 
@@ -76,6 +107,7 @@
   + linebot
   + google_trans_new
   + twstock
+  + 中央氣象局api
   
 * packages
   + line-bot-sdk
