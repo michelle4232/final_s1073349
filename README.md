@@ -14,9 +14,9 @@
  + 若要執行程式
     * 儲存檔案(直接執行main.py 即可) 
     * 需先綁定Heroku(我是用github直接連結Heroku) 
-    * 將檔案拉到github中 
-    * 在Heroku開啟一個專案連結github 
-    * 將Heroku的url貼至使用帳號之channel的 ``Webhook URL`` 
+      * 將檔案拉到github中 
+      * 在Heroku開啟一個專案連結github 
+      * 將Heroku的url貼至使用帳號之channel的 ``Webhook URL`` 
 
  + 可能會出現的小問題  
     * 可能因所採用的氣象局api, 缺少某些縣市的天氣資訊 
