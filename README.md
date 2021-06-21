@@ -13,6 +13,7 @@
  
  + 若要執行程式
   > 儲存檔案(直接執行main.py 即可) 
+  >
   > 需先綁定Heroku(我是用github直接連結Heroku) 
   > 將檔案拉到github中 
   > 在Heroku開啟一個專案連結github 
