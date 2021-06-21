@@ -1,17 +1,31 @@
 # lineBot helper
+
   This is a lineBot helper for myself.
+  
+  
 ## Build process
- + 執行程式方法
+
+ + 測試是否可使用
   > 加入line好友
   > ![image](https://user-images.githubusercontent.com/62208026/122752847-06890c80-d2c4-11eb-9c5c-6084c3a0cbd2.png)
   
-  
-  > 點選'run main'
-  > 依照功能需求在自己的line中輸入文字
-   
+  > 依照功能需求在自己的line中輸入文字(輸入之訊息有固定格式)
+ 
+ + 若要執行程式
+  > 儲存檔案(直接執行main.py 即可)
+  > 需先綁定Heroku(我是用github直接連結Heroku)
+  > 將檔案拉到github中
+  > 在Heroku開啟一個專案連結github
+  > 將Heroku的url貼至使用帳號之channel的 ``Webhook URL``
+
+ + 可能會出現的小問題  
+  > 可能因所採用的氣象局api, 缺少某些縣市的天氣資訊
+  > linebot每個月的免費使用額度有上限50則, 因此可能無法自動回覆訊息(若有需要我測試時有錄影, 可demo影片)
+  > Heroku每個月額度也有一定的上限, 同上 
 
 
 ## Introduction
+
   由於現在大部分人皆是使用Line作為傳輸訊息之工具, 且以我來說. 我並不是一個勤勞的人, 較不愛開電腦或網頁, 因此我使用Line作為一個小幫手，幫助我達到一些我平常會想要查詢的資料。
   它包含了以下功能:
   1. 查詢天氣
@@ -46,6 +60,7 @@
   > > > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/stock.jpg" width="300" height="600">
 ---------------------------------------
 ## References
+
 + https://marketingliveincode.com/?page_id=2532
 + https://www.youtube.com/channel/UCguZS-y7codLSt6vpkVdnKg
 + https://github.com/emn178/markdown
