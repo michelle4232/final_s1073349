@@ -35,6 +35,7 @@
   5. 及時股價
 
 ## Details of the approach
+    main()
 
 ## Results
 
