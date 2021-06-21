@@ -6,7 +6,7 @@
 ## Build process
 
  + 測試是否可使用
-  * 加入line好友
+   加入line好友
   * ![image](https://user-images.githubusercontent.com/62208026/122752847-06890c80-d2c4-11eb-9c5c-6084c3a0cbd2.png)
   
   * 依照功能需求在自己的line中輸入文字(輸入之訊息有固定格式)
