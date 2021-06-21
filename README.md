@@ -35,7 +35,8 @@
   5. 及時股價
 
 ## Details of the approach
-    
+
+  + psudoCode    
     app_run()
     connect to http
     main(){
@@ -43,8 +44,7 @@
       
       get data from external input
       if( input == weather){
-        connect to "opendata.cwb.gov.tw"api and get data
-        return and send to the user
+        connect to "opendata.cwb.gov.tw"api and get data to return
       }
       else if( input == translate){
         split input
