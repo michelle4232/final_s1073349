@@ -1,7 +1,12 @@
 # lineBot helper
   This is a lineBot helper for myself.
 ## Build process
-  
+ + 執行程式方法
+  > 加入line好友
+  > <img src="![image](https://user-images.githubusercontent.com/62208026/122752847-06890c80-d2c4-11eb-9c5c-6084c3a0cbd2.png)" width="300" height="600">
+  > 點選'run main'
+  > 依照功能需求在自己的line中輸入文字
+   
 
 
 ## Introduction
@@ -16,12 +21,8 @@
 ## Details of the approach
 
 ## Results
-+ 執行程式方法
-  > 加入line好友
-  > 點選'run main'
-  > 依照功能需求在自己的line中輸入文字
-  
-+ 結果 Example
+
++ Example
   > input: `` @天氣 新竹市 ``
   > > output: 天氣, 溫度, 降雨, 溫溼度
   > > > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg" width="300" height="600">
