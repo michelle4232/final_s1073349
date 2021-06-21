@@ -54,7 +54,7 @@
            then check_request is success or not
                 get the movie information which are going to come out and return information
        
-         else if input == news
+        else if input == news
            then parsing lxml and get information what we want
                 return it
         
