@@ -3,7 +3,7 @@
 ## Build process
  + 執行程式方法
   > 加入line好友
-  > <img src="![image](https://user-images.githubusercontent.com/62208026/122752847-06890c80-d2c4-11eb-9c5c-6084c3a0cbd2.png)" width="300" height="600">
+  > ![image](https://user-images.githubusercontent.com/62208026/122752847-06890c80-d2c4-11eb-9c5c-6084c3a0cbd2.png)
   > 點選'run main'
   > 依照功能需求在自己的line中輸入文字
    
