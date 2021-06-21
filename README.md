@@ -36,8 +36,10 @@
 
 ## Details of the approach
 
-  + psudoCode    
+  + psudoCode
+      
         app_run()
+        
         connect to http
       
         listen from callback's post request
