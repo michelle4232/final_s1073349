@@ -37,9 +37,9 @@
 ## Details of the approach
 
   + psudoCode    
-      app_run()
-      connect to http
-      main(){
+        app_run()
+        connect to http
+      
         listen from callback's post request
 
         get data from external input
@@ -66,7 +66,7 @@
         other{
           return message what you send
         }
-      }
+      
 
 ## Results
 
