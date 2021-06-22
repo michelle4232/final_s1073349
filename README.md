@@ -3,7 +3,7 @@
   :speech_balloon: This is a lineBot helper for myself.
   
   
-## Build process 
+## Build process :hammer:
 
  + 測試是否可使用
     * 加入line好友
@@ -28,7 +28,7 @@
     * Heroku每個月額度也有一定的上限, 同上  
 
 
-## Introduction
+## Introduction :mag_right:
 
   _由於現在大部分人皆是使用Line作為傳輸訊息之工具, 且以我來說. 我並不是一個勤勞的人, 較不愛開電腦或網頁, 因此我使用Line作為一個小幫手，幫助我達到一些我平常會想要查詢的資料。
   它包含了以下功能:_
@@ -38,7 +38,7 @@
   4. 即時新聞
   5. 及時股價
 
-## Details of the approach
+## Details of the approach :hourglass:
 
   + pseudoCode
       
@@ -76,7 +76,7 @@
   + ![image](https://user-images.githubusercontent.com/62208026/122762547-02fb8280-d2d0-11eb-96e8-a014e517f6a0.png)
       
 
-## Results
+## Results :file_folder:
 
 + Example
   > input: `` @天氣 新竹市 ``
@@ -99,7 +99,8 @@
   > > output: 此股最新價格及近五日波動
   > > > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/stock.jpg" width="300" height="600">
 ---------------------------------------
-## References
+
+## References :bookmark:
 
 * 參考網址
   + https://marketingliveincode.com/?page_id=2532
