@@ -86,18 +86,22 @@
 ---------------------------------------
   > input: `` @翻譯 I am happy ``
   > > output: 我很高興
+  > > 
   > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/trans.jpg" width="300" height="600">
 ---------------------------------------
   > input:`` @電影 ``
   > > output: 最近即將上映之電影
+  > > 
   > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/movie.jpg" width="300" height="600">
 ---------------------------------------
   > input: `` @即時新聞 ``
   > > output: 最近六則新聞
+  > > 
   > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/news.jpg" width="300" height="600">
 ---------------------------------------
   > input: `` #2330 `` 
   > > output: 此股最新價格及近五日波動
+  > > 
   > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/stock.jpg" width="300" height="600">
 ---------------------------------------
 
