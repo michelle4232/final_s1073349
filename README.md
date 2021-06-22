@@ -81,7 +81,7 @@
 + Example
   > input: `` @天氣 新竹市 ``
   > > output: 天氣, 溫度, 降雨, 溫溼度
-        \\ <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg" width="300" height="600">
+  > > <img src="https://github.com/michelle4232/final_s1073349/blob/main/photos/weather.jpg" width="300" height="600">
 ---------------------------------------
   > input: `` @翻譯 I am happy ``
   > > output: 我很高興
