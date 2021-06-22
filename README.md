@@ -12,14 +12,26 @@
     * 依照功能需求在自己的line中輸入文字(輸入之訊息有固定格式)
  
  + 若要執行程式
+    * 建立Linebot端
+      * 在Providers旁點選``create``
+      * 點選``Create a new channel``
+      * 點選``Message API``
+      * 依照頁面輸入此機器人資訊
     * 更改main.py的secret 及 token
+      * Channel secret: 位於 Basic settings 底下
+      * Channel access token: 位於 Message API底下
     * 儲存檔案(直接執行main.py 即可) 
     * 需使用Heroku(我是用github直接連結Heroku) 
-      * 將檔案拉到github中上傳
+      * 創建 Heroku 帳號
+          * 點選 右上角`` New ``中的 `` Create APP ``
+          * 依頁面資訊輸入並創建 APP
+      * 將所有需要用到的檔案拉到github中上傳
       * 在Heroku開啟一個專案 `` 點選Deploy `` 
-      * 連結github 
+      * 點選github圖示連結github 
       * 拉至Heroku此頁面最下方並點選 ``Deploy Branch``
-      * 將Heroku產生的網頁的url貼至使用帳號之channel的 ``Webhook URL`` 
+      * 會開始run, 若需要查看錯誤訊息可至網頁右上的 ``More``點選``view logs`` 
+      * 將Heroku產生的網頁的url貼至機器人帳號之channel之``Messaging API``底下的``Webhook URL`` 
+      * 記得開啟``Use webhook``
     * 若過程無出錯應可順利收發訊息
 
  + 可能會出現的小問題  
@@ -123,7 +135,7 @@
   + twstock
   + 中央氣象局api
   
-* packages
+* requirements
   + line-bot-sdk
   + bs4
   + flask
