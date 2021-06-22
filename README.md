@@ -33,6 +33,8 @@
       * 將Heroku產生的網頁的url貼至機器人帳號之channel之``Messaging API``底下的``Webhook URL`` 
       * 記得開啟``Use webhook``
     * 若過程無出錯應可順利收發訊息
+    * 中央氣象局API已使用key連結並且已寫入main中因此不多加贅述
+    * google_trans_new、twstock 不須任何key, 便可直接使用
 
  + 可能會出現的小問題  
     * 可能因所採用的氣象局api, 缺少某些縣市的天氣資訊 
